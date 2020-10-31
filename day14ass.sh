@@ -1,14 +1,13 @@
 #!bin/bash -x
 
-read -p "enter a surname " surname
+read -p "enter an emailid " emailid
 
-p2='^[A-Z]{1}[a-zA-Z]{3,15}$';
+p3="^[a-zA-Z._-]+@(gmail|bl|yahoo)+.(com|co|in)";
 
-if [[ $surname =~ $p2 ]]
+if [[ $emailid =~ $p3 ]]
 then
-
     echo "yes"
 else
-
     echo "no"
 fi
+
