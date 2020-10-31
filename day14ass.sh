@@ -1,14 +1,16 @@
 #!bin/bash -x
 
-#for password 2
+#for password with numeric number
+
 
 read -p "enter a pasword " A
-p6='^[A-Z]{1}[a-zA-Z]{8,}$';
+p7='^[A-Z]{1}[+a-zA-Z0-9]{8,}$'
 
-if [[ $A =~ $p6 ]]
+if [[ $A =~ $p7 ]]
 then
     echo "yes"
 else
     echo "no"
 fi
+
 
