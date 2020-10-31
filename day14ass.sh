@@ -1,11 +1,11 @@
 #!bin/bash -x
 
-#for password 1
+#for password 2
 
-read -p "enter a pasword " p
-p5='^[a-zA-Z]{1,8}$'
+read -p "enter a pasword " A
+p6='^[A-Z]{1}[a-zA-Z]{8,}$';
 
-if [[ $p =~ $p5 ]]
+if [[ $A =~ $p6 ]]
 then
     echo "yes"
 else
