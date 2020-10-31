@@ -1,10 +1,11 @@
 #!bin/bash -x
 
-read -p "enter an emailid " emailid
+#for password 1
 
-p3="^[a-zA-Z._-]+@(gmail|bl|yahoo)+.(com|co|in)";
+read -p "enter a pasword " p
+p5='^[a-zA-Z]{1,8}$'
 
-if [[ $emailid =~ $p3 ]]
+if [[ $p =~ $p5 ]]
 then
     echo "yes"
 else
